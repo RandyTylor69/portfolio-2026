@@ -21,15 +21,17 @@ export function Model(props) {
   monitorTexture.flipY = false;
 
   // Make computer face the mouse
+  // the first 2 sets control the rotation,
+  // the second 2 sets control the position
   useFrame((state, delta) => {
     monitorRef.current.rotation.y =
-      mouseCords.clientX / window.innerWidth - 0.5;
+      (mouseCords.clientX / window.innerWidth - 0.5)*0.2;
     monitorRef.current.rotation.x =
-      mouseCords.clientY / window.innerHeight - 0.5;
+      (mouseCords.clientY / window.innerHeight - 0.5)*0.2;
     monitorRef.current.position.x =
-      (mouseCords.clientX / window.innerWidth - 0.5);
+      (mouseCords.clientX / window.innerWidth - 0.5)*0.1;
     monitorRef.current.position.y =
-      (mouseCords.clientY / window.innerHeight - 0.5);
+      (mouseCords.clientY / window.innerHeight - 0.5)*0.1;
   });
 
   return (
