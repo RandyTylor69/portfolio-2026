@@ -2,10 +2,11 @@ import { BsThreeDots } from "react-icons/bs";
 
 export default function Header() {
   return (
-    <header className="w-screen h-40 flex justify-center items-center border-2 border-green-300">
+    <header className="w-screen h-20 flex justify-center items-center backdrop-blur-md
+    fixed top-0 z-999">
       <nav
         className="group overflow-hidden
-            border-green-300 border-2 h-12 w-12 rounded-4xl text-white
+            border-2 h-12 w-12 rounded-4xl 
             relative
             duration-300 hover:w-70"
       >

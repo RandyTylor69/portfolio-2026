@@ -3,11 +3,11 @@ import { Model } from "../Model";
 
 export default function Computer() {
   return (
-    <section className="w-screen h-screen flex justify-center items-center">
-      <div className="size-100 border-green-300 border-2 
+    <section className="size-full flex justify-center items-center">
+      <div className="size-100 
       flex justify-center items-center">
         <Canvas>
-          <directionalLight position={[0, 1, 2]} />
+          <directionalLight position={[0, 1, 4]} />
           <ambientLight />
           <Model />
         </Canvas>

@@ -2,23 +2,25 @@ import { useState, createContext } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Computer from "./components/Computer";
+import Works from "./components/Works";
+import Projects from "./components/Projects";
 
 export const ThemeContext = createContext();
 
 function App() {
   const [mouseCords, setMouseCords] = useState({ clientX:0, clientY:0});
-  console.log(mouseCords.clientX, mouseCords.clientY)
   return (
     <ThemeContext.Provider value={{ mouseCords, setMouseCords }}>
       <main
-        className="w-screen h-screen bg-gray-800
-    flex flex-col justify-between"
+        className="w-screen h-full bg-secondary text-primary
+    flex flex-col items-center justify-center font-display"
         onMouseMove={({ clientX, clientY }) => {
           setMouseCords({ clientX: clientX, clientY: clientY });
         }}
       >
         <Header />
-        <Computer />
+        <Works />
+        <Projects />
       </main>
     </ThemeContext.Provider>
   );

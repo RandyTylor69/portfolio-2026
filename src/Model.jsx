@@ -25,13 +25,13 @@ export function Model(props) {
   // the second 2 sets control the position
   useFrame((state, delta) => {
     monitorRef.current.rotation.y =
-      (mouseCords.clientX / window.innerWidth - 0.5)*0.2;
+      (mouseCords.clientX / window.innerWidth - 0.5) * 0.2;
     monitorRef.current.rotation.x =
-      (mouseCords.clientY / window.innerHeight - 0.5)*0.2;
+      (mouseCords.clientY / window.innerHeight - 0.5) * 0.2;
     monitorRef.current.position.x =
-      (mouseCords.clientX / window.innerWidth - 0.5)*0.1;
+      (mouseCords.clientX / window.innerWidth - 0.5) * 0.1;
     monitorRef.current.position.y =
-      (mouseCords.clientY / window.innerHeight - 0.5)*0.1;
+      (mouseCords.clientY / window.innerHeight - 0.5) * 0.1;
   });
 
   return (
@@ -40,11 +40,15 @@ export function Model(props) {
         <mesh
           geometry={nodes.Cube002.geometry}
           material={materials["inner-computer-case"]}
-        />
+        >
+          <meshStandardMaterial color={"#2F3B43"} />
+        </mesh>
         <mesh
           geometry={nodes.Cube002_1.geometry}
           material={materials["Material.002"]}
-        />
+        >
+          <meshStandardMaterial color={"#C9CAAC"} />
+        </mesh>
         <mesh
           geometry={nodes.Cube002_2.geometry}
           material={materials["Material.003"]}
