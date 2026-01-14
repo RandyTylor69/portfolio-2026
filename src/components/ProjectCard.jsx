@@ -1,4 +1,10 @@
-export default function ProjectCard({ ImgURL, title, body, keywords, rotation }) {
+export default function ProjectCard({
+  ImgURL,
+  title,
+  body,
+  keywords,
+  rotation,
+}) {
   return (
     <article
       className={`w-80 md:w-120 h-130 md:h-180 bg-primary drop-shadow-2xl
@@ -19,8 +25,8 @@ export default function ProjectCard({ ImgURL, title, body, keywords, rotation })
           className="w-full h-20 
             flex justify-center items-center gap-4"
         >
-          {keywords.map((keyword) => (
-            <div className="h-6 md:h-8 w-15 md:w-24 relative">
+          {keywords.map((keyword, i) => (
+            <div key={i} className="h-6 md:h-8 w-15 md:w-24 relative">
               <button
                 className="absolute transition-transform cursor-pointer
                 h-6 md:h-8 w-15 md:w-24 -translate-y-1 bg-primary z-3 rounded-2xl

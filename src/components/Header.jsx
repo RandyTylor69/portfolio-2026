@@ -1,10 +1,11 @@
 import { BsThreeDots } from "react-icons/bs";
-
+import {Link} from "react-router-dom"
 export default function Header() {
   return (
     <header
-      className="w-screen max-w-200 h-20 flex justify-between items-center backdrop-blur-md p-4
-    fixed top-0 z-999 flex-row-reverse border-b-secondary border-b-2"
+      className="
+      w-screen max-w-200 h-20 flex justify-between items-center backdrop-blur-md p-4
+    fixed top-0 z-999 flex-row-reverse border-b-secondary border-b-2 text-primary"
     >
       <nav
         className="group overflow-hidden
@@ -25,29 +26,29 @@ export default function Header() {
           group-hover:translate-y-0
          transition-transform transform duration-300 ease-in-out"
         >
-          <section
-            className=" flex flex-col gap-6 h-18 
+          <Link to="/"
+            className=" flex flex-col gap-6 h-18 cursor-pointer
           transition-transform transform duration-300 ease-in-out hover:translate-y-12"
           >
-            <h1 className="text-red-400">Works</h1>
-            <h1 className="">Works</h1>
-          </section>
-          <section
-            className=" flex flex-col gap-6 h-18 
+            <h1 className="text-red-400">Work</h1>
+            <h1 className="">Work</h1>
+          </Link>
+          <Link to="/connect"
+            className=" flex flex-col gap-6 h-18 cursor-pointer
           transition-transform transform duration-300 ease-in-out hover:translate-y-12"
           >
             <h1 className="text-red-400">Connect</h1>
             <h1 className="">Connect</h1>
-          </section>
+          </Link>
         </div>
       </nav>
-      <divT
+      <div
         className="w-50h-10 flex flex-col justify-between items-left text-[12px]
       uppercase peer-hover:opacity-25 duration-300 ease-in-out"
       >
         <p className="text-primary">Christopher Ziyin Mao</p>
         <p className="text-primary/50">full-stack developer</p>
-      </divT>
+      </div>
     </header>
   );
 }

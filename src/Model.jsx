@@ -4,7 +4,7 @@ Command: npx gltfjsx@6.5.3 public/BlenderObject.glb
 */
 
 import { useContext } from "react";
-import { ThemeContext } from "./App";
+import { ThemeContext } from "./pages/Work";
 import { useState, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
