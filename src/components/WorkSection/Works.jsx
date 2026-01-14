@@ -1,10 +1,10 @@
 import Computer from "./Computer";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Headline from "./Headline";
+import Headline from "../Headline";
 export default function Works() {
   return (
     <section
-      className="w-full max-w-200 h-200 mt-40 
+      className="w-full max-w-200 h-200
         flex flex-col justify-center items-center
         "
     >

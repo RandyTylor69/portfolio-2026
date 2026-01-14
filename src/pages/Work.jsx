@@ -1,6 +1,6 @@
-import Works from "../components/Works";
-import Projects from "../components/Projects";
-import ProjectsGallery from "../components/ProjectsGallery";
+import Works from "../components/WorkSection/Works";
+import Projects from "../components/WorkSection/Projects";
+import ProjectsGallery from "../components/WorkSection/ProjectsGallery";
 import { useState, createContext } from "react";
 
 export const ThemeContext = createContext();
@@ -10,7 +10,7 @@ export default function Work() {
   return (
     <ThemeContext.Provider value={{ mouseCords, setMouseCords }}>
       <main
-        className="w-screen h-full bg-secondary text-primary
+        className="w-screen h-full bg-secondary text-primary pt-20
     flex flex-col items-center justify-center font-display"
         onMouseMove={({ clientX, clientY }) => {
           setMouseCords({ clientX: clientX, clientY: clientY });

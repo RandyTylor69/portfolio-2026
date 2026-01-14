@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="w-screen h-full flex justify-center items-center flex-col
+    <div className="w-screen min-h-screen flex flex-col justify-center items-center
     font-display">
       <Header />
       <Outlet />

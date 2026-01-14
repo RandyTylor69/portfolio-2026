@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 export default function ProjectsGallery() {
   return (
-    <div className="w-screen h-450 md:h-600 flex flex-col justify-center items-center gap-12">
+    <div className="w-screen h-440 md:h-600 flex flex-col justify-center items-center gap-12">
       <ProjectCard
         ImgURL={"./ProjectCardCovers/blog.png"}
         title={"a blog of one's own"}
