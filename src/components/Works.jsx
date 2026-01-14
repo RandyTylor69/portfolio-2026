@@ -1,13 +1,14 @@
 import Computer from "./Computer";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Headline from "./Headline";
 export default function Works() {
   return (
     <section
-      className="w-full max-w-200 h-160 mt-40
+      className="w-full max-w-200 h-200 mt-40
         flex flex-col justify-center items-center
         "
     >
-      <h1 className="text-6xl md:text-8xl lg:text-9xl">Works</h1>
+      <Headline name={"Works"} />
 
       <Computer />
 

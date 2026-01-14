@@ -1,3 +1,5 @@
+import Headline from "./Headline";
+
 export default function Projects() {
   return (
     <section
@@ -5,7 +7,7 @@ export default function Projects() {
                 flex flex-col justify-center items-center
                 p-8 gap-8"
     >
-      <h1 className="text-6xl md:text-8xl lg:text-9xl">Projects</h1>
+      <Headline name={"Projects"} />
       <div className="w-full h-full flex flex-col border-t-2 border-r-2 border-l-2 ">
         <div className="w-full h-10 flex justify-end items-center px-4">
           <p className="font-light text-xs md:text-md italic ">
