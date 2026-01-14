@@ -98,7 +98,7 @@ export default function Headline({ name }) {
   }, [hovered]);
 
   return (
-    <div className="w-full h-96 flex justify-center items-center  relative">
+    <div className="w-full  h-96 flex justify-center items-center  relative">
       <div
         className={`absolute w-full h-full flex justify-center items-end z-81 
             pointer-events-none
@@ -106,7 +106,7 @@ export default function Headline({ name }) {
         ref={matterRef}
       />
       <h1
-        className="text-6xl md:text-8xl lg:text-9xl  -mb-1 md:-mb-3
+        className="text-6xl md:text-[10rem]  -mb-1 md:-mb-3
       absolute bottom-0 left-1/2 transform -translate-x-1/2 z-80
       transition-transform duration-300 hover:-translate-y-10 ease-in-out"
         onPointerEnter={(e) => {

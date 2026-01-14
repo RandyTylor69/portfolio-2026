@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Computer from "./components/Computer";
 import Works from "./components/Works";
 import Projects from "./components/Projects";
+import ProjectsGallery from "./components/ProjectsGallery";
 
 export const ThemeContext = createContext();
 
@@ -21,6 +22,7 @@ function App() {
         <Header />
         <Works />
         <Projects />
+        <ProjectsGallery />
       </main>
     </ThemeContext.Provider>
   );
