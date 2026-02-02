@@ -6,6 +6,22 @@ import Connect from "./pages/Connect";
 import Umoja from "./pages/products/Umoja";
 
 export default function App() {
+  console.log(
+    `
+
+███████╗██╗██╗   ██╗██╗███╗   ██╗    ███╗   ███╗ █████╗  ██████╗ 
+╚══███╔╝██║╚██╗ ██╔╝██║████╗  ██║    ████╗ ████║██╔══██╗██╔═══██╗
+  ███╔╝ ██║ ╚████╔╝ ██║██╔██╗ ██║    ██╔████╔██║███████║██║   ██║
+ ███╔╝  ██║  ╚██╔╝  ██║██║╚██╗██║    ██║╚██╔╝██║██╔══██║██║   ██║
+███████╗██║   ██║   ██║██║ ╚████║    ██║ ╚═╝ ██║██║  ██║╚██████╔╝
+╚══════╝╚═╝   ╚═╝   ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ 
+
+`,
+    `\n`,
+    `1. If you're looking for the pronounciation of my first name, it's "zeen" :)`,
+    "\n",
+    `2. If you're the owner of the arm on the right of the photo that has a boat in it, 侬好！`
+  );
   return (
     <BrowserRouter>
       <Routes>
