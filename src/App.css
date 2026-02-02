@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --font-display: "Geist Mono", monospace;
+  --font-article: "Geist", sans-serif;
+  --color-primary: #d8d9c3;
+  --color-secondary: #181a1b;
 
-@theme{
-    --font-display:"Geist Mono", monospace;
-    --font-article:"Geist", sans-serif;
-    --color-primary:#D8D9C3;
-    --color-secondary:#181A1B;
+  /* --- Connect page orbit animation --- */
+  --animate-orbiting: orbit 24s linear infinite;
+  @keyframes orbit {
+    0% {
+      transform: translate(-50%, -50%) rotateY(calc(var(--index) * 72deg))
+        translateZ(150px);
+    }
+    100% {
+      transform: translate(-50%, -50%)
+        rotateY(calc(var(--index) * 72deg + 360deg)) translateZ(150px);
+    }
+  }
 }

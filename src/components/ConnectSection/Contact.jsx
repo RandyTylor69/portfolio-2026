@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaPaperclip, } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 export default function Contact() {
   return (
-    <div className="w-full max-w-200 h-40 flex justify-center items-center ">
+    <div className="w-full max-w-200 h-40 mt-20 md:mt-0 flex justify-center items-center ">
       <div className="w-full max-w-200 flex flex-col border-l-2 border-primary/20">
         <a
           href="https://github.com/RandyTylor69"
