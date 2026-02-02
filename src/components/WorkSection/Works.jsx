@@ -1,9 +1,12 @@
 import Computer from "./Computer";
 import Headline from "../Headline";
-import Work from "./Work";
+import Work from "./WorkGridItem";
 import { motion, AnimatePresence } from "motion/react";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import {Link} from "react-router-dom"
+
 import TypeWriter from "./TypeWriter";
+
 export default function Works() {
   const [hovered, setHovered] = useState(null);
 
@@ -43,13 +46,15 @@ export default function Works() {
         onMouseLeave={() => setHovered(null)}
       >
         {workData.map((w, i) => (
-          <Work
-            key={i}
-            company={w.company}
-            desc={w.desc}
-            hovered={hovered}
-            onMouseEnter={() => setHovered(w)}
-          />
+          <Link to={w.id} key={i}>
+            <Work
+              key={i}
+              company={w.company}
+              desc={w.desc}
+              hovered={hovered}
+              onMouseEnter={() => setHovered(w)}
+            />
+          </Link>
         ))}
       </motion.div>
     </section>
@@ -59,18 +64,21 @@ export default function Works() {
 const workData = [
   {
     company: "Umoja Foundation Group",
+    id: "umoja-foundation-group",
     desc: "A humanitarian non-profit based in Kakamega county, Kenya.",
     year: "2025-2026",
     role: "Full-stack Developer, volunteer",
   },
   {
     company: "Buster's Sea Cove",
+    id: "busters-sea-cove",
     desc: "A seafood catering platform operated from Toronto.",
     year: "2026",
     role: "Full-stack Developer, freelance",
   },
   {
     company: "Greensort Western",
+    id: "greensort-western",
     desc: "A student-led oragnization advocating for sustainability on campus.",
     year: "2026",
     role: "Development Director",

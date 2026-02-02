@@ -4,7 +4,7 @@ Command: npx gltfjsx@6.5.3 public/BlenderObject.glb
 */
 
 import { useContext } from "react";
-import { ThemeContext } from "./pages/Work";
+import { ThemeContext } from "../../pages/Work";
 import { useState, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
@@ -19,6 +19,9 @@ export function Model(props) {
 
   const monitorTexture = useTexture(monitorImg);
   monitorTexture.flipY = false;
+
+
+  
 
   // Make computer face the mouse
   // the first 2 sets control the rotation,

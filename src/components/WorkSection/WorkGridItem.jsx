@@ -19,8 +19,10 @@ export default function Work({
           className="bg-white/5 absolute h-full w-full top-0 left-0 rounded-2xl z-10"
         />
       )}
-      <h3 className="font-semibold z-20">{company}</h3>
-      <p className="text-primary/50 z-20">{desc}</p>
+      
+        <h3 className="font-semibold">{company}</h3>
+        <p className="text-primary/50">{desc}</p>
+      
     </motion.article>
   );
 }

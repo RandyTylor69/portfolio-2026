@@ -1,13 +1,14 @@
 import { BsThreeDots } from "react-icons/bs";
 import {Link} from "react-router-dom"
 export default function Header() {
+  
   return (
-    <header
+    <nav
       className="
-      w-screen max-w-200 h-20 flex justify-between items-center backdrop-blur-md p-4
+      w-screen max-w-200 h-20 flex justify-between items-center backdrop-blur-md p-4 
     fixed top-0 z-999 flex-row-reverse border-b-secondary border-b-2 text-primary"
     >
-      <nav
+      <div
         className="group overflow-hidden
             border-2 h-12 w-12 rounded-4xl 
             relative peer
@@ -41,14 +42,14 @@ export default function Header() {
             <h1 className="">Connect</h1>
           </Link>
         </div>
-      </nav>
-      <div
-        className="w-50h-10 flex flex-col justify-between items-left text-[12px]
-      uppercase peer-hover:opacity-25 duration-300 ease-in-out"
+      </div>
+      <Link to={"/"}
+        className="w-50 h-10 flex flex-col justify-between items-left text-[12px]
+      uppercase peer-hover:opacity-25 duration-300 ease-in-out  "
       >
         <p className="text-primary">Christopher Ziyin Mao</p>
         <p className="text-primary/50">full-stack developer</p>
-      </div>
-    </header>
+      </Link>
+    </nav>
   );
 }
