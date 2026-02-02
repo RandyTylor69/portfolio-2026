@@ -17,13 +17,13 @@ export default function Contact() {
           LinkedIn <FaLinkedin />
         </a>
         <a
-          href="https://drive.google.com/file/d/1rL9Pake3w-jYaXBXkYKFobHkoqyq97HW/view"
+          href="https://drive.google.com/file/d/1D28j3pMBkgx8MOkD0eF9dD3EWnIA6mAR/view?usp=sharing"
           className="w-full h-10 p-4 flex gap-2 items-center"
         >
           Resume <FaPaperclip />
         </a>
         <a
-          href="mailto:christophermaomao@gmail.com"
+          href="mailto:ziyinmao2006@gmail.com"
           className="w-full h-10 p-4 flex gap-2 items-center"
         >
           Email <IoIosMail />

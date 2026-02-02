@@ -63,7 +63,7 @@ export default function Headline({ name }) {
             yScale: 1,
           },
         },
-      })
+      }),
     );
 
     var ground = Bodies.rectangle(200, 200, 400, 1, { isStatic: true });
@@ -106,14 +106,14 @@ export default function Headline({ name }) {
         ref={matterRef}
       />
       <h1
-        className="text-5xl md:text-[7rem]  -mb-1 md:-mb-3
+        className="text-4xl 
       absolute bottom-0 left-1/2 transform -translate-x-1/2 z-80
-      transition-transform duration-300 hover:-translate-y-10 ease-in-out"
+     "
         onPointerEnter={(e) => {
-          e.stopPropagation(), setHovered(true);
+          (e.stopPropagation(), setHovered(true));
         }}
         onPointerLeave={(e) => {
-          e.stopPropagation(), setHovered(false);
+          (e.stopPropagation(), setHovered(false));
         }}
       >
         {name}

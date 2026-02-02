@@ -1,10 +1,5 @@
-export default function ProjectCard({
-  ImgURL,
-  title,
-  body,
-  keywords,
-  rotation,
-}) {
+import { FaGithub } from "react-icons/fa";
+export default function ProjectCard({ ImgURL, title, body, rotation, URL }) {
   return (
     <article
       className={`w-80 md:w-120 h-130 md:h-180 bg-primary drop-shadow-2xl
@@ -12,7 +7,7 @@ export default function ProjectCard({
     >
       {/** ---- img ---- */}
       <div className="w-full h-[60%] md:h-[65%] ">
-        <img src={ImgURL} className="bg-cover rounded-2xl" />
+        <img src={ImgURL} className="bg-cover rounded-2xl border-2 text-secondary" />
       </div>
       {/** ----  article ---- */}
       <div
@@ -25,18 +20,24 @@ export default function ProjectCard({
           className="w-full h-20 
             flex justify-center items-center gap-4"
         >
-          {keywords.map((keyword, i) => (
-            <div key={i} className="h-6 md:h-8 w-15 md:w-24 relative">
-              <button
-                className="absolute transition-transform cursor-pointer
-                h-6 md:h-8 w-15 md:w-24 -translate-y-1 bg-primary z-3 rounded-2xl
-                border-2 border-secondary hover:translate-y-0"
+          <div className="h-6 md:h-8 w-auto ">
+            <button
+              className="absolute transition-transform cursor-pointer
+                h-6 md:h-8 w-auto -translate-y-1 bg-primary z-3 rounded-2xl
+                border-2 border-secondary hover:translate-y-0 ease-out
+                flex justify-center items-center"
+            >
+              <a
+              target="_blank"
+                href={URL}
+                className="text-[11px] md:text-[16px] w-48 flex
+              justify-around items-center"
               >
-                <h3 className="text-[11px] md:text-[16px]">{keyword}</h3>
-              </button>
-              <div className="h-6 md:h-8 w-15 md:w-24 absolute bg-secondary rounded-2xl" />
-            </div>
-          ))}
+                VIEW ON GITHUB <FaGithub />
+              </a>
+            </button>
+            <div className=" h-6 md:h-8 w-48 bg-secondary rounded-2xl "></div>
+          </div>
         </section>
       </div>
     </article>
