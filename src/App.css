@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
 
+*{
+    /* border:red 2px solid; */
+}
+
 @theme {
   --font-display: "Geist Mono", monospace;
   --font-article: "Geist", sans-serif;

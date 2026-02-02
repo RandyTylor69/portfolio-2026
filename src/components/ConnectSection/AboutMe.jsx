@@ -2,15 +2,17 @@ import Orbit from "./Orbit";
 
 export default function AboutMe() {
   return (
-    <section className="w-full max-w-200 h-100 mt-40 flex flex-col gap-20 md:gap-4 font-article">
+    <section className="w-full max-w-3xl h-100 mt-30 flex flex-col gap-8 md:gap-4 font-article">
+
       <h1 className="text-4xl font-bold uppercase h-8 w-full inline-block">ziyin mao</h1>
+
       <article
         className="w-full h-200 md:h-80 flex flex-col md:flex-row md:justify-between items-center gap-12
        "
       >
         <div
           className="w-full h-auto md:w-[45%] text-primary/70
-        flex flex-col gap-8"
+        flex flex-col gap-6"
         >
           <p>
             I'm a full-stack developer specialized in front-end engineering,
