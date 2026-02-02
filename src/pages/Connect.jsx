@@ -5,8 +5,8 @@ import Contact from "../components/ConnectSection/Contact";
 export default function Connect() {
   return (
     <main
-      className="w-screen p-8 h-screen bg-secondary text-primary
-    flex flex-col items-center justify-center font-display gap-40 md:gap-0"
+      className="w-screen min-h-screen h-full p-4  bg-secondary text-primary
+    flex flex-col items-center font-display gap-12"
     >
       <AboutMe />
       <Contact />

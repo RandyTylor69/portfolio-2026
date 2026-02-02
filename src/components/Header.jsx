@@ -1,12 +1,16 @@
 import { BsThreeDots } from "react-icons/bs";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 export default function Header() {
-  
+  const d = new Date().toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
   return (
     <nav
       className="
       w-screen max-w-200 h-20 flex justify-between items-center backdrop-blur-md p-4 
-    fixed top-0 z-999 flex-row-reverse border-b-secondary border-b-2 text-primary"
+    fixed top-0 z-999 border-b-secondary border-b-2 text-primary flex-row-reverse"
     >
       <div
         className="group overflow-hidden
@@ -27,14 +31,16 @@ export default function Header() {
           group-hover:translate-y-0
          transition-transform transform duration-300 ease-in-out"
         >
-          <Link to="/"
+          <Link
+            to="/"
             className=" flex flex-col gap-6 h-18 cursor-pointer
           transition-transform transform duration-300 ease-in-out hover:translate-y-12"
           >
             <h1 className="text-red-400">Work</h1>
             <h1 className="">Work</h1>
           </Link>
-          <Link to="/connect"
+          <Link
+            to="/connect"
             className=" flex flex-col gap-6 h-18 cursor-pointer
           transition-transform transform duration-300 ease-in-out hover:translate-y-12"
           >
@@ -43,11 +49,12 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <Link to={"/"}
+      <Link
+        to={"/"}
         className="w-50 h-10 flex flex-col justify-between items-left text-[12px]
       uppercase peer-hover:opacity-25 duration-300 ease-in-out  "
       >
-        <p className="text-primary">Christopher Ziyin Mao</p>
+        <p className="text-primary">Ziyin Mao</p>
         <p className="text-primary/50">full-stack developer</p>
       </Link>
     </nav>
