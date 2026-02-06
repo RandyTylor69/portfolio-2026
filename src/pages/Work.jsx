@@ -1,6 +1,5 @@
 import Works from "../components/WorkSection/Works";
-import Projects from "../components/WorkSection/Projects";
-import ProjectsGallery from "../components/WorkSection/ProjectsGallery";
+import Projects from "../components/WorkSection/Projects/Projects";
 import { useState, createContext } from "react";
 
 export const ThemeContext = createContext();
@@ -18,7 +17,6 @@ export default function Work() {
       >
         <Works />
         <Projects />
-        <ProjectsGallery />
       </main>
     </ThemeContext.Provider>
   );

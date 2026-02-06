@@ -40,7 +40,7 @@ export default function Works() {
       )}
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 
+        className="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3 p-2 
         gap-4 md:gap-16"
         layout
         onMouseLeave={() => setHovered(null)}

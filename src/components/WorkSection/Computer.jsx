@@ -1,5 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Model } from "./Model";
+import { Suspense } from "react";
+import Loading from "../../pages/Loading"
 
 export default function Computer() {
   return (
@@ -11,7 +13,9 @@ export default function Computer() {
         <Canvas>
           <directionalLight position={[0, 1, 4]} />
           <ambientLight />
-          <Model />
+          <Suspense fallback={<Loading />}>
+            <Model />
+          </Suspense>
         </Canvas>
       </div>
     </section>
