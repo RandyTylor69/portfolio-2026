@@ -28,7 +28,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/christopher-mao-2414752a8/",
+    url: "https://www.linkedin.com/in/ziyin-mao-2414752a8/",
     icon: FaLinkedin,
   },
   {

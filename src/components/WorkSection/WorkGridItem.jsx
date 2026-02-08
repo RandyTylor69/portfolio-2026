@@ -7,9 +7,8 @@ export default function Work({
   onMouseLeave,
 }) {
   return (
-    <motion.article
+    <article
       className="flex flex-col relative h-full w-full p-3 cursor-pointer font-article"
-      layout
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -25,6 +24,6 @@ export default function Work({
 
       <h3 className="font-semibold">{company}</h3>
       <p className="text-primary/50">{desc}</p>
-    </motion.article>
+    </article>
   );
 }

@@ -12,7 +12,7 @@ export default function Works() {
 
   return (
     <section
-      className="w-full max-w-200 h-200 mt-20 md:mt-0
+      className="w-full max-w-200 h-200 mt-20 md:mt-0 relative
         flex flex-col justify-center items-center 
         "
     >
@@ -39,10 +39,10 @@ export default function Works() {
         </AnimatePresence>
       )}
 
-      <motion.div
+      <div
         className="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3 p-2 
         gap-4 md:gap-16"
-        layout
+        
         onMouseLeave={() => setHovered(null)}
       >
         {workData.map((w, i) => (
@@ -56,7 +56,7 @@ export default function Works() {
             />
           </Link>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

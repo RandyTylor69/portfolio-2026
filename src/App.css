@@ -24,4 +24,16 @@
         rotateY(calc(var(--index) * 72deg + 360deg)) translateZ(150px);
     }
   }
+
+  /* --- Loading Page ---- */
+  --animate-pullup: pullup 0.5s cubic-bezier(0.77,0,0.18,1) forwards;
+  @keyframes pullup {
+    from {
+      transform: translateY(56px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
 }

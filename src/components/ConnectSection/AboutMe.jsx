@@ -27,7 +27,7 @@ export default function AboutMe() {
             crocheting with my mom.
           </p>
           <p>
-            I study at Western University, pursuing a bachlor's degree in
+            I study at Western University, pursuing a bachelor's degree in
             Computer Science.
           </p>
         </div>

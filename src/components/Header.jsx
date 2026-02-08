@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div
       className="w-screen flex justify-center items-center
-     h-20 backdrop-blur-md fixed top-0 z-999 border-b-secondary border-b-2"
+     h-20 backdrop-blur-md fixed top-0 z-888 border-b-secondary border-b-2"
     >
       <nav
         className="
