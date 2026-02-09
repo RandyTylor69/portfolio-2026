@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Work from "./pages/Work";
 import Connect from "./pages/Connect";
 import Buster from "./pages/products/Buster"
+import Greensort from "./pages/products/Greensort"
 import Umoja from "./pages/products/Umoja";
 import {useEffect, useState} from "react"
 
@@ -37,6 +38,7 @@ export default function App() {
         </Route>
         <Route path="/umoja-foundation-group" element={<Umoja />} />
         <Route path="/busters-sea-cove" element={<Buster />} />
+        <Route path="/greensort-western" element={<Greensort />} />
       </Routes>
     </BrowserRouter>
   );
