@@ -2,9 +2,10 @@ import Orbit from "./Orbit";
 
 export default function AboutMe() {
   return (
-    <section className="w-full max-w-3xl h-100 mt-30 flex flex-col gap-8 md:gap-4 font-article">
-
-      <h1 className="text-4xl font-bold uppercase h-8 w-full inline-block">ziyin mao</h1>
+    <section className="w-full max-w-200 h-100 mt-30 flex flex-col gap-8 md:gap-4 font-article">
+      <h1 className="text-4xl font-bold uppercase h-8 w-full inline-block">
+        ziyin mao
+      </h1>
 
       <article
         className="w-full h-200 md:h-80 flex flex-col md:flex-row md:justify-between items-center gap-12
@@ -23,8 +24,8 @@ export default function AboutMe() {
             prototype and deliver amazing full-stack solutions.
           </p>
           <p>
-            Away from the keyboard, I spend time on chess, piano, and
-            crocheting with my mom.
+            Away from the keyboard, I spend time playing chess, piano, and
+            inventing new ways to meal prep.
           </p>
           <p>
             I study at Western University, pursuing a bachelor's degree in

@@ -10,12 +10,16 @@ export default function Toolkit() {
   const [hovered, setHovered] = useState(null);
   return (
     <section
-      className="w-full max-w-3xl min-h-40 flex flex-col gap-12
+      className="w-full max-w-200 min-h-40 flex flex-col gap-12
   mt-55 md:mt-0"
     >
-      <div>
-        <h3 className="font-article font-extrabold ">Tools I Work With</h3>
+      <div
+        className="border-b-2 border-primary/20 font-display
+        h-10 w-full text-xl"
+      >
+        <h1>02 Toolkit</h1>
       </div>
+
       <div className="w-full h-full grid grid-cols-5 grid-rows-2 gap-4 md:gap-12">
         {techs.map((t) => (
           <div

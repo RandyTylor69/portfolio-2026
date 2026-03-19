@@ -1,5 +1,5 @@
 import Works from "../components/WorkSection/Works";
-import Projects from "../components/WorkSection/Projects/Projects";
+import Projects from "../components/WorkSection/Projects";
 import { useState, createContext, useEffect } from "react";
 import Loading from "../pages/Loading";
 
@@ -22,7 +22,7 @@ export default function Work() {
           setMouseCords({ clientX: clientX, clientY: clientY });
         }}
       >
-        <Loading />
+        {/* <Loading /> */}
         <Works />
         <Projects />
       </main>

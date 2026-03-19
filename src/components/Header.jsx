@@ -13,7 +13,7 @@ export default function Header() {
     >
       <nav
         className="
-      max-w-200 w-full flex justify-between items-center  p-4 
+      max-w-200 w-full flex justify-between items-center  p-4 md:p-0
       text-primary flex-row-reverse"
       >
         <div

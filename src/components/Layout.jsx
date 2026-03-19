@@ -1,12 +1,16 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-center items-center
-    font-display">
+    <div
+      className="w-screen min-h-screen flex flex-col justify-center items-center
+    font-display bg-secondary"
+    >
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }

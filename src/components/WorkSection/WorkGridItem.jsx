@@ -1,5 +1,5 @@
 import { motion} from "motion/react";
-export default function Work({
+export default function WorkGridItem({
   company,
   desc,
   hovered,
@@ -16,13 +16,12 @@ export default function Work({
        
           <motion.div
             layoutId="WorkHover"
-            
             className="bg-white/5 absolute h-full w-full top-0 left-0 rounded-2xl z-10"
           />
        
       )}
 
-      <h3 className="font-semibold">{company}</h3>
+      <h3>{company}</h3>
       <p className="text-primary/50">{desc}</p>
     </article>
   );
