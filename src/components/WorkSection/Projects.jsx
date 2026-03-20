@@ -2,8 +2,8 @@ export default function Projects() {
   return (
     <section
       className="w-full max-w-200 h-auto
-                flex flex-col items-center
-                p-4 sticky mb-20 gap-12"
+                flex flex-col items-center md:mt-12
+                p-4 md:p-0 sticky mb-20 gap-12"
     >
       <div
         className="border-b-2 border-primary/20 font-display

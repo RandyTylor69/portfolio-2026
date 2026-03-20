@@ -10,8 +10,7 @@ export default function Toolkit() {
   const [hovered, setHovered] = useState(null);
   return (
     <section
-      className="w-full max-w-200 min-h-40 flex flex-col gap-12
-  mt-55 md:mt-0"
+      className="w-full max-w-200 min-h-40 flex flex-col gap-12"
     >
       <div
         className="border-b-2 border-primary/20 font-display
@@ -20,7 +19,12 @@ export default function Toolkit() {
         <h1>02 Toolkit</h1>
       </div>
 
-      <div className="w-full h-full grid grid-cols-5 grid-rows-2 gap-4 md:gap-12">
+      <div
+        className="w-full h-full grid 
+        grid-cols-4 grid-rows-3 gap-8
+        md:grid-cols-5 md:grid-rows-2 md:gap-12
+          "
+      >
         {techs.map((t) => (
           <div
             onMouseEnter={() => setHovered(t.name)}
@@ -29,7 +33,7 @@ export default function Toolkit() {
             className="w-12 aspect-square rounded-2xl border-2 border-primary/20 hover:border-primary
             text-primary/60 hover:text-primary transition-all duration-200 ease-out
              flex justify-center items-center text-xl drop-shadow-2xl
-             hover:translate-y-0.5 relative group"
+             hover:translate-y-0.5 relative group place-self-center "
           >
             <t.icon />
             {hovered == t.name && (

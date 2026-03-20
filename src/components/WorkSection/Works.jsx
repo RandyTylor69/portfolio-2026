@@ -39,7 +39,7 @@ export default function Works() {
           w-full max-w-200 h-40 absolute 
           md:top-1/3 lg:top-3/8 left-1/2 -translate-x-1/2"
           >
-            <article className="flex flex-col text-primary/50 text-sm max-w-40 gap-2">
+            <article className="flex-col text-primary/50 text-sm max-w-40 gap-2 hidden md:flex">
               <TypeWriter hovered={hovered} key={hovered.company} />
             </article>
           </motion.div>
@@ -48,7 +48,6 @@ export default function Works() {
         <div
           className="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3
         gap-4 md:gap-16 font-light"
-         
         >
           {workData.map((w, i) => (
             <Link to={w.id} key={i}>

@@ -8,7 +8,7 @@ export const ThemeContext = createContext();
 export default function Work() {
   const [mouseCords, setMouseCords] = useState({ clientX: 0, clientY: 0 });
   const [loading, setLoading] = useState(true);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1700);
     return () => clearTimeout(timer);
@@ -22,7 +22,7 @@ export default function Work() {
           setMouseCords({ clientX: clientX, clientY: clientY });
         }}
       >
-        {/* <Loading /> */}
+        <Loading />
         <Works />
         <Projects />
       </main>

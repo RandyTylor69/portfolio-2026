@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
 
-*{
-    /* border:red 2px solid; */
+* {
+  /* border:red 2px solid; */
 }
 
 @theme {
@@ -16,17 +16,15 @@
   --animate-orbiting: orbit 24s linear infinite;
   @keyframes orbit {
     0% {
-      transform: translate(-50%, -50%) rotateY(calc(var(--index) * 72deg))
-        translateZ(150px);
+      transform: rotateY(0deg);
     }
     100% {
-      transform: translate(-50%, -50%)
-        rotateY(calc(var(--index) * 72deg + 360deg)) translateZ(150px);
+      transform: rotateY(360deg);
     }
   }
 
   /* --- Loading Page ---- */
-  --animate-pullup: pullup 0.5s cubic-bezier(0.77,0,0.18,1) forwards;
+  --animate-pullup: pullup 0.5s cubic-bezier(0.77, 0, 0.18, 1) forwards;
   @keyframes pullup {
     from {
       transform: translateY(56px);
@@ -35,5 +33,4 @@
       transform: translateY(0);
     }
   }
-
 }

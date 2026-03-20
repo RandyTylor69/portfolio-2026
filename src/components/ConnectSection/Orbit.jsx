@@ -7,24 +7,27 @@ export default function Orbit() {
 
   return (
     <div
-      className=" aspect-square w-[40%]
-    flex justify-center items-center"
+      className=" w-full md:h-full md:w-80 md:mr-15
+         flex justify-center items-center"
+      style={{
+        transformStyle: "preserve-3d",
+        transform: `rotateX(${rotateX - 8}deg)`,
+      }}
     >
       <div
-        className="h-40 aspect-square relative"
+        className="h-80 aspect-square relative animate-orbiting"
         style={{
           transformStyle: "preserve-3d",
-          perspective: "1500px",
-          transform: `rotateX(${rotateX}deg)`,
-          willChange: "transform"
         }}
       >
         {photos.map((p, i) => (
           <img
             key={i}
-            className={`aspect-square h-full rounded-2xl border-2 border-secondary
-            absolute left-[50%] top-[50%] animate-orbiting`}
-            style={{ "--index": i }}
+            className={`aspect-square h-40 rounded-2xl border-3 border-secondary
+            absolute`}
+            style={{
+              transform: `translate(50%, 50%) rotateY(${i * 72}deg) translateZ(180px) `,
+            }}
             src={`/connect/${i}.svg`}
           />
         ))}

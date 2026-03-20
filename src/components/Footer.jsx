@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className="flex gap-2 items-center ">
           <p className="">E-mail: </p>
-          <span className="bg-white/5 p-1 rounded-md font-light">
+          <span className="bg-white/5 p-1 rounded-md font-light text-sm">
             ziyinmao2006 [at] gmail [dot] com
           </span>
 
