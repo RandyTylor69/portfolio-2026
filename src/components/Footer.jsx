@@ -36,7 +36,10 @@ export default function Footer() {
           </span>
 
           <button
-            onClick={copy}
+            onClick={() => {
+              copy();
+              navigator.clipboard.writeText("ziyinmao2006@gmail.com");
+            }}
             className="cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-250 ease-out"
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -49,7 +52,7 @@ export default function Footer() {
                   exit="hidden"
                   className="flex font-light justify-center items-center gap-1"
                 >
-                  Copied <IoCheckmark />
+                  <span className="text-sm">Copied</span> <IoCheckmark />
                 </motion.span>
               ) : (
                 <motion.span

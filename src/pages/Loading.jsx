@@ -2,9 +2,17 @@ import { useState, useEffect } from "react";
 
 export default function Loading() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1700);
-    return () => clearTimeout(timer);
+    document.body.style.overflow = "hidden";
+    const timer = setTimeout(() => {
+      document.body.style.overflow = "scroll";
+      setLoading(false);
+    }, 1700);
+    return () => {
+      document.body.style.overflow = "scroll";
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -25,7 +33,7 @@ export default function Loading() {
               animate-pullup`}
               style={{
                 transform: "translateY(56px)",
-                aniamtionFillMode: "forwards",
+                animationFillMode: "forwards",
                 animationDelay: `${Math.abs(index - 2) * 0.5}s`,
               }}
             >
