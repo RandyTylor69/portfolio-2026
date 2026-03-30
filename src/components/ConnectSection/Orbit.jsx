@@ -28,7 +28,7 @@ export default function Orbit() {
             style={{
               transform: `translate(50%, 50%) rotateY(${i * 72}deg) translateZ(180px) `,
             }}
-            src={`/connect/${i}.svg`}
+            src={`/connect/${i}.png`}
           />
         ))}
       </div>
@@ -37,9 +37,5 @@ export default function Orbit() {
 }
 
 const photos = [
-  { color: "green" },
-  { color: "red" },
-  { color: "blue" },
-  { color: "orange" },
-  { color: "purple" },
+  1,2,3,4,5
 ];
